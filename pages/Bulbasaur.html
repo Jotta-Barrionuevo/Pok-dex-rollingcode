@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="practica de html y css" />
+    <meta
+      name="keywords"
+      content="Pokédex, Pokémon, anime, Pikachu"
+    />
+    <meta
+      name="author"
+      content="Barrionuevo Juan carlos"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid mx-0">
+          <a href="../index.html" class="navbar-brand">
+            <img
+              src="../img/bdcd20f5411ee5785889542d303ad4cb.png3.png"
+              class="w-100"
+              alt="logo Pokedex"
+          /></a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navItem"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navItem" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link active">Inicio</a>
+              </li>
+              <li class="nav-item dropdown" id="dropdown_navbar">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                 Categorías
+                </a>
+                <ul class="dropdown-menu" id="dropdown_categoria_pag">
+                  <li>
+                    <a class="dropdown-item text-light" href="../pages/Pokédex.html">Pokédex</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="../pages/sobrenosotros.html">Sobre nosotros</a>
+                  </li>
+                </ul>
+              </li>
+              <form class="busqueda">
+                <div class="formulario_enviar">
+                  <label for="busqueda"></label>
+                  <input
+                    type="text"
+                    class="rounded-1"
+                    placeholder="Buscar Pokemon..."
+                    size="15px"
+                    minlength="2"
+                    maxlength="30"
+                  />
+                  <button
+                    type="submit"
+                    class="rounded-1"
+                    id="btn-enviar">
+                    <i class="bi bi-search text-danger"></i>
+                  </button>
+                </div>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section>
+            <div
+              id="carousel-Fade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../img/PokemonPelicula_SecretosSelva-2.jpg"
+                    class="d-block w-100"
+                    alt="pokémon los secretos de la selva"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/ZwmjF3t.jpg"
+                    class="d-block w-100"
+                    alt="pokémon los 3 originales"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/Wallpaper-Pokemon-Wallpaper-Pokemon-Minimalism-Squirtle44.jpg"
+                    class="d-block w-100"
+                    alt="Pokémon trio" />
+                </div>
+              </section>
+            <hr>
+        
+            <div class="card mb-3 w-100" >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../img/001.png" class="img-fluid rounded-start" alt="Bulbasaur">
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                    <div class="card-body">
+                      <h5 class="card-title text-light text-start">Bulbasaur N.°001</h5>
+                      <p class="card-text">Este Pokémon nace de una semilla en el lomo, que brota con el paso del tiempo</p>
+                    </div>
+                   <div class="row w-100 text-bg-primary rounded mx-0">
+                     <div class="container text-bg-primary rounded col col-md-6 col-lg-6">
+                     <h5>Version</h5><hr>
+                     <p>Altura <br>0,7 m</p>
+                     <p>Peso <br>6,9kg</p>
+                     <p><i class="bi bi-gender-male"><i class="bi bi-gender-female"></i></i></p>
+                     </div>
+                     <div class="container col col-md-6 col-lg-6"><br>
+                    <p></p><hr>
+                    <p>Categoría <br>Semilla</p>
+                    <p>Habilidad <br>Espesura</p>
+                     </div>
+                   </div><br>
+                <div>
+                   <h6>Tipo</h6>
+                   <span class="badge rounded-pill text-bg-success">Planta</span><span class="badge rounded-pill bg-primary-subtle">Veneno</span>
+                   <hr>
+                   <h6>Debilidad</h6>
+                   <span class="badge rounded-pill bg-danger">Fuego</span><span class="badge rounded-pill bg-secondary">Psiquico</span><span class="badge rounded-pill bg-body-tertiary">Volador</span><span class="badge rounded-pill bg-info">Hielo</span>
+                </div>
+            </div>
+        </div><br>
+        <section>
+            <div class="card-group">
+                <div class="card text-bg-success">
+                    <h5>Evoluciones</h5>
+                  <img src="../img/001.png" class="card-img-top" alt="Bulbasaur">
+                  <div class="card-body">
+                    <h5 class="card-title text-light">Bulbasaur N.°001</h5>
+                    <span class="badge rounded-pill text-bg-success">Planta</span><span class="badge rounded-pill bg-primary-subtle">Veneno</span>
+                  </div>
+                </div>
+                <div class="card text-bg-success"><br>
+                  <img src="../img/002.png" class="card-img-top" alt="Ivasaur">
+                  <div class="card-body">
+                    <h5 class="card-title text-light">Ivasaur N.°002</h5>
+                    <span class="badge rounded-pill text-bg-success">Planta</span><span class="badge rounded-pill bg-primary-subtle">Veneno</span>
+                  </div>
+                </div>
+                <div class="card text-bg-success"><br>
+                  <img src="../img/003.png" class="card-img-top" alt="Venesaur">
+                  <div class="card-body">
+                    <h5 class="card-title text-light">Venesaur N.°003</h5>
+                    <span class="badge rounded-pill text-bg-success">Planta</span><span class="badge rounded-pill bg-primary-subtle">Veneno</span>
+                  </div>
+                </div>
+              </div>
+        </section>              
+        </main>
+    <footer class="py-4">
+        <section>
+        <p class="text-center w-100 ">&copy; Todos los derechos reservados</p>
+      </section>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </html>
