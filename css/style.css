@@ -3,11 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;  
   }
-  .navbar{
-    position: fixed; 
-    z-index: 2;
-    width: 100%;
-  }
+  
   #btn-enviar:hover{
     box-shadow: 3px 0px 30px red;
   }
@@ -19,6 +15,9 @@ body {
 
   footer {
     background: #000000;
+  
+    
+    bottom: 0;
   }
  
 @media all and (max-width:767px){
