@@ -3,10 +3,24 @@ body {
     flex-direction: column;
     min-height: 100vh;  
   }
+  .navbar{
+    position: fixed; 
+    z-index: 2;
+    width: 100%;
+  }
   #btn-enviar:hover{
     box-shadow: 3px 0px 30px red;
   }
+  .tarjetas:hover{
+    cursor:default;
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
 
+  footer {
+    background: #000000;
+  }
+ 
 @media all and (max-width:767px){
   .banner{
       height: 250px;
